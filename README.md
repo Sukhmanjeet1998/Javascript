@@ -1,2 +1,2 @@
-# javascript-youtube
+# javascript
 By ->  Chai aur Code
