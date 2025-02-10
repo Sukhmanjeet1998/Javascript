@@ -47,11 +47,46 @@ const operation = function(a,b,symbol){
     return operator(a,b,symbol);
 }
 const result = operation(5,6,"+");
-console.log(result);
+// console.log(result);
 
-console.log(typeof marvelCharacters + marvelCharacters);  // object
-console.log(typeof myInfo + myInfo);  // object
-console.log(typeof operation);  // function object
+// console.log(typeof marvelCharacters + marvelCharacters);  // object
+// console.log(typeof myInfo + myInfo);  // object
+// console.log(typeof operation);  // function object
 
 // Javascript is a dynamic type language.
+
+
+//  Stack Memory (Primitive data type)
+//  Heap Memory (Non-Primitive data type)
+
+// Primitive (Stack)
+let myName = "Sukhman";
+console.log(myName);
+let myNewName = myName;
+console.log(myNewName);
+
+myName = "Sukhmanjeet Singh"  // Here as i change value in myName variable will not show same change in myNewName because copy is there not reference.
+console.log(myName);
+console.log(myNewName);
+
+
+// Non Primitive (Heap)..........................
+const myRecord1 = {
+    name: "Sukhman",
+    age: 26,
+    isWorking: true,
+    companyName: "Buzzclan"
+};
+
+const myRecord2 = myRecord1;
+
+
+// console.log(myRecord1);
+// console.log(myRecord2);
+
+myRecord2.age = 27;  // Here as i change value in myRecord2 (age) variable will  show same change in myRecord1 (age) varaible because reference is passed.
+// console.log(myRecord1);
+// console.log(myRecord2);
+
+
 
