@@ -7,6 +7,7 @@ let arr2 = [6,7,8,9,10]
 // let arr3 = arr1.concat(arr2);
 // console.log(arr3);
 
+// ... Spread operator
 let arr4 = [...arr1,...arr2];
 // console.log(arr4);
 
